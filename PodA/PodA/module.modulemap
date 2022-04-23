@@ -1,0 +1,25 @@
+//
+//  module.swift
+//  PodA
+//
+//  Created by Ray on 2022/4/22.
+//
+framework module PodA {
+
+}
+module Public {
+    header "Son.h"
+    header "Father.h"
+    header "Header.h"
+    export *
+}
+module Tool {
+    requires objc
+    header "CommonTools.h"
+    export *
+}
+
+//framework module PodA {
+//    header "PodA-Swift.h"
+//    requires objc
+//}
